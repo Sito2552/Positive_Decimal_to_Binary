@@ -32,7 +32,7 @@ int dec_bin(int quotient, int remainder, int position, int binary)
 
 int main()
 {
-    int quotient, remainder, binary, position;
+    int quotient, remainder, position, binary;
     for (int i = 0; i < N; i++)
     {
         quotient = 0;
