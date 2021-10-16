@@ -4,14 +4,14 @@ int array[N] = {7,34,62,73,94,104,305,693,843,961};
 
 int dec_bin(int quotient, int remainder, int position, int binary)
 {
-    int aux;
+    int aux, count;
     while (remainder >= 2)
     {
         remainder = remainder - 2;
         quotient++;
     }
     aux = remainder;
-    for (int count = 0; count < position - 1; count++)
+    for (count = 0; count < position - 1; count++)
     {
         remainder = remainder + aux;
     }
@@ -21,7 +21,7 @@ int dec_bin(int quotient, int remainder, int position, int binary)
         remainder = quotient;
         quotient = 0;
         aux = position;
-        for (int count = 0; count < 9; count++)
+        for (count = 0; count < 9; count++)
         {
             position = position + aux;
         }
